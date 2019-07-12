@@ -33,7 +33,7 @@ class AuthServiceProvider extends ServiceProvider
         $this->app['auth']->viaRequest('api', function ($request) {
             $header = $request->token;
 
-            if ($header && $header == 'birds fly south') {
+            if ($header && $header == 'testing') {
                 # code...
                 return 'success';
             }
